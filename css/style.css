@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Belleza&family=Labrada:ital,wght@1,300&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mallanna&family=Playfair+Display:ital,wght@1,400;1,500&family=Rubik+Iso&family=Rubik+Mono+One&family=Share+Tech+Mono&display=swap');
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'lora', sans-serif;
+    /*background-image: url('../imgs/A\ L\ C.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: black;
+}
+
+
+/*Transition */
+
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+/* Nav bar */
+
+nav, .nav-links {
+    display: flex;
+
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links{ 
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(210,96,130);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+.icon-logo{
+    display: flex;
+    justify-content: flex-start;
+    width: 10px;
+    height: 86px;
+    margin: 0 0 0 24px;
+}
+
+/*Hamburger menu 
+
+#hamburger-nav{
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child { 
+    opacity: 1;
+
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+*/
+
+/* Sections */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* Profile section */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section-pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section-text {
+    align-self: center;
+    text-align: center;
+}
+
+.section-text-p{
+    font-weight: 600;
+}
+
+.section-text-p1 {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.section-text-p2 {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    color:rgb(210,96,130);
+}
+
+#socials-container {
+    display: flex;
+    justify-content:center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* Iconos */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+
+/* Buttons */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(0, 0, 0) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: black;
+    color: white;
+}
+
+.btn-color-1:hover {
+    background: rgb(210,96,130);
+    border: white;
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+    background-color: rgb(210,96,130);
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+
+
+
