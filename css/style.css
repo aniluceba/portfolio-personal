@@ -291,9 +291,9 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  gap: 1rem;
+  margin-bottom: 5rem;
+  margin-top: 6rem;
 }
 
 .about-details-container {
@@ -310,10 +310,13 @@ section {
   padding: 1.5rem;
   flex: 1;
   text-align: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
 }
 
 .section-container {
-  gap: 4rem;
+  gap: 5rem;
   height: 50%;
 }
 
